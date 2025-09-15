@@ -1,0 +1,30 @@
+Network - resnet50
+Attention Module - none
+Params - 26423016.0
+FLOPs - 4260619776.0
+--------------------------------------------------
+Network - resnet50
+Attention Module - none
+Params - 26423016.0
+FLOPs - 4260619776.0
+--------------------------------------------------
+Network - resnet50
+Attention Module - none
+Params - 26423016.0
+FLOPs - 4260619776.0
+--------------------------------------------------
+Network - resnet50
+Attention Module - none
+Params - 26423016.0
+FLOPs - 4260619776.0
+--------------------------------------------------
+Network - resnet50
+Attention Module - none
+Params - 26423016.0
+FLOPs - 4260619776.0
+--------------------------------------------------
+Network - resnet50
+Attention Module - none
+Params - 26423016.0
+FLOPs - 4260619776.0
+--------------------------------------------------
