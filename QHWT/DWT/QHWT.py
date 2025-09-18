@@ -8,7 +8,7 @@ from ..QCNN.quaternion_layers import QuaternionConv
 
 #sym2 coif1 dmey
 class QHWT(nn.Module):
-    def __init__(self, in_channels,kernel_size=3, wt_levels=2, scale='bn', wt_type='db1'):
+    def __init__(self, in_channels, kernel_size=3, wt_levels=2, scale='bn', wt_type='db1'):
         super(QHWT, self).__init__()
 
         self.wt_levels = wt_levels
@@ -35,6 +35,7 @@ class QHWT(nn.Module):
             nn.BatchNorm2d(in_channels // 4),
             nn.ReLU(inplace=True)
         )
+        # self.downSample = nn.Conv2d(in_channels+in_channels//4, out_channels, 3, 2, 1, bias=False)
 
     def forward(self, x):
 
@@ -70,6 +71,7 @@ class QHWT(nn.Module):
             next_x_ll = next_x_ll[:, :, :curr_shape[2], :curr_shape[3]]
         assert len(x_ll_in_levels) == 0
         x = torch.cat([x, next_x_ll], dim=1)
+        # x = self.downSample(x)
         return x
 
 
